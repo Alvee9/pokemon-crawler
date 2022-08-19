@@ -40,7 +40,7 @@ class Command(BaseCommand):
 
     def get_tasks(self, session, pokemon_count):
         tasks = []
-        for offset in range(0, (pokemon_count // 50) * 50, 50):
+        for offset in range(0, (pokemon_count // 50) * 50 + 1, 50):
             tasks.append(asyncio.create_task(self.get_and_insert(session, offset, 50)))
         
         return tasks

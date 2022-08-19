@@ -1,5 +1,11 @@
+# VSCode
+.vscode/
+
 # pycharm
 .idea/
+
+# pg data
+pg_data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
